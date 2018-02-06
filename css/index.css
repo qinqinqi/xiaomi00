@@ -80,12 +80,34 @@
 
 }
 .search{
-	border: 1px solid #e0e0e0;
-	width: 294px;
-	height:48px;
+	width: 296px;
+	height: 50px;
+	background-color: red;
 	float: right; 
 	margin-top: 25px;
-
+}
+.search_input{
+	width: 245px;
+	height: 48px;
+	border: 1px solid #e0e0e0;
+}
+.search_icon{
+	font-family: 'iconfont'; 
+	width: 49px;
+    height: 50px;
+    border: 1px solid #e0e0e0;
+    font-size: 20px;
+    float: right;
+    line-height: 24px;
+    background: #fff;
+    color: #616161;
+    border-left: 0;
+    margin-left: -4px;
+}
+.search_icon:hover{
+	color: #fff;
+	background-color: #ff6700;
+	cursor: pointer;
 }
 .star{
 	width: 1226px;
@@ -1059,4 +1081,15 @@ li:hover{
 	bottom: 0;
 	opacity: 1;
 }
-
+.one_bottom_left img:hover,.one_item:hover{
+	box-shadow: 0 15px 30px rgba(0,0,0,0.1);/*x y 模糊度 阴影大小 颜色*/
+	transform:translate(0,-5px) ;
+	transition: all 1s ease-out;
+}
+.two_bottom_left img:hover,.two_item:hover,
+.tuijian_bottom_item:hover,.hot_bottom_item1:hover,
+.neirong_bottom_item1:hover,.view_bottom_item1:hover  {
+	box-shadow: 0 15px 30px rgba(0,0,0,0.1);/*x y 模糊度 阴影大小 颜色*/
+	transform:translate(0,-2px) ;
+	transition: all 1s ease-out;
+}
