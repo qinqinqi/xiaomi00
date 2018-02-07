@@ -26,7 +26,7 @@
 	line-height: 40px;
 	color: #B0B0B0;
 	float: left;
-	size: 12px;
+	font-size: 12px;
 }
 
 .top_line{
@@ -1082,15 +1082,19 @@ li:hover{
 	bottom: 0;
 	opacity: 1;
 }
-.one_bottom_left img:hover,.one_item:hover{
+.list_right1:hover,.star_item:hover,.one_bottom_left img:hover,.one_item:hover{
 	box-shadow: 0 15px 30px rgba(0,0,0,0.1);/*x y 模糊度 阴影大小 颜色*/
 	transform:translate(0,-5px) ;
-	transition: all 1s ease-out;
+	
 }
 .two_bottom_left img:hover,.two_item:hover,
 .tuijian_bottom_item:hover,.hot_bottom_item1:hover,
 .neirong_bottom_item1:hover,.view_bottom_item1:hover  {
 	box-shadow: 0 15px 30px rgba(0,0,0,0.1);/*x y 模糊度 阴影大小 颜色*/
-	transform:translate(0,-2px) ;
-	transition: all 1s ease-out;
+	transform:translate(0,-5px) ;
+}
+.list_right1,.star_item,.one_bottom_left img,.one_item,.two_bottom_left img,.two_item,
+.tuijian_bottom_item,.hot_bottom_item1,
+.neirong_bottom_item1,.view_bottom_item1{
+	transition: all 0.5s ease-out;
 }
