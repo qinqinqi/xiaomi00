@@ -4,4 +4,6 @@
 	text-decoration-line:   none; 
 	font-style: normal;
 	list-style: none;
+	-webkit-tap-highlight-color: rgb(0,0,0,0);
+	outline: none;
 }
