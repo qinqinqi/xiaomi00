@@ -1039,13 +1039,7 @@ li:hover{
 	padding-bottom: 3px;
     border-bottom: 2px solid #ff6700;
 }
-.play:hover{
-	width: 36px;
-	height: 24px;
-	background-color: red;
-	border:0; 
-	cursor: pointer;
-}
+
 .view_bottom_item1 h1:hover{
 	color: red;
 	cursor: pointer;
@@ -1097,4 +1091,15 @@ li:hover{
 .tuijian_bottom_item,.hot_bottom_item1,
 .neirong_bottom_item1,.view_bottom_item1{
 	transition: all 0.5s ease-out;
+}
+/* .play:hover {
+	width: 36px;
+	height: 24px;
+	background-color:  #ff6700;
+	border:0; 
+	cursor: pointer;
+} */
+.img_view:hover .play{
+	 background-color: #ff6700;
+	 color: #fff;
 }
