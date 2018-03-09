@@ -79,13 +79,20 @@
 
 	<!-- banner开始 -->
 	<div id="banner">
-		<div class="banner_img">
-			<img src="img/banner1t.jpg" alt="">
-			<img src="img/banner2E.jpg" alt="">
-			<img src="img/banner3.jpg" alt="">
-			<img src="img/banner5.jpg" alt="">
-			<img src="img/banner4.jpg" alt="">
-		</div>
+		<ul class="imgbox">
+			<li class="imgbox1"><img src="img/banner1.jpg" alt=""></li>
+			<li><img src="img/banner2.jpg" alt=""></li>
+			<li><img src="img/banner3.jpg" alt=""></li>
+			<li><img src="img/banner4.jpg" alt=""></li>
+			<li><img src="img/banner5.jpg" alt=""></li>
+		</ul>
+		<ul class="pargerbox">
+			<li class="active"></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+		</ul>
 		<ul class="banner_nav">
 			<li>
 				<span class="banner_title">手机电话卡</span>
@@ -131,8 +138,8 @@
 				<span class="banner_jiantou">&gt;</span>
 			</li>
 		</ul>
-		<div class="banner_btn banner_btn_left">&lt;</div>
-		<div class="banner_btn banner_btn_right" >&gt;</div>
+		<div class="btn_left"></div>
+		<div class="btn_right"></div>
 	</div>
 <!-- banner结束 -->
 
@@ -190,44 +197,104 @@
 		<div class="star_top">
 			<h1 >小米明星单品</h1>
 			<div class="star_btn">
-				<div class="star_btn1">&lt;</div>
-				<div class="star_btn2">&gt;</div>
+				<div class="star_btn1 disable">&lt;</div>
+				<div class="star_btn2 ">&gt;</div>
 			</div>
 		</div>
 		<div class="star_bottom">
-			<div class="star_item star_item1">
-				<img class="img" src="img/6ef55907-bbed-49be-a2bb-be0821b5f7b8.png" alt="">
-				<h1>10000mAh小米手环2</h1>
-				<h2>OLED显示屏幕，升级计算算法</h2>
-				<h3>149元</h3>
-			</div>
+			<div class="bottom_inner">
+				<div class="star_item star_item1">
+					<img class="img" src="img/6ef55907-bbed-49be-a2bb-be0821b5f7b8.png" alt="">
+					<h1>10000mAh小米手环2</h1>
+					<h2>OLED显示屏幕，升级计算算法</h2>
+					<h3>149元</h3>
+				</div>
+				<div class="star_item star_item2">
+					<img src="img/302f2608-655a-489c-a0c5-a3b9172defd1.png" alt="">
+					<h1>小米圈铁耳机Pro</h1>
+					<h2>独创双动圈+动铁，三单元发声</h2>
+					<h3>129元</h3>
+				</div>
+				<div class="star_item star_item3">
+					<img src="img/T1KvdjBX_v1RXrhCrK.jpg" alt="">
+					<h1>小米净水器 厨下式</h1>
+					<h2>直出纯净水，隐藏式安装</h2>
+					<h3>1999元</h3>
+				</div>
+				<div class="star_item star_item4">
+					<img src="img/848def18-47d9-4ca0-8822-c2ac61b83779.png" alt="">
+					<h1>米家扫地机器人</h1>
+					<h2>智能路径规划，扫得干净扫得快</h2>
+					<h3>1699元</h3>
+				</div>
+				<div class="star_item star_item6">
+					<img src="img/de35852a-1be5-4ef5-846f-dcdd2efcfea6.png" alt="">
+					<h1>小米路由器</h1>
+					<h2>更快更强，不止四天线</h2>
+					<h3>149元</h3>
+				</div>
 
-			<div class="star_item star_item2">
-				<img src="img/302f2608-655a-489c-a0c5-a3b9172defd1.png" alt="">
-				<h1>小米圈铁耳机Pro</h1>
-				<h2>独创双动圈+动铁，三单元发声</h2>
-				<h3>129元</h3>
-			</div>
+				<div class="star_item star_item1">
+					<img class="img" src="img/6ef55907-bbed-49be-a2bb-be0821b5f7b8.png" alt="">
+					<h1>10000mAh小米手环2</h1>
+					<h2>OLED显示屏幕，升级计算算法</h2>
+					<h3>149元</h3>
+				</div>
+				<div class="star_item star_item2">
+					<img src="img/302f2608-655a-489c-a0c5-a3b9172defd1.png" alt="">
+					<h1>小米圈铁耳机Pro</h1>
+					<h2>独创双动圈+动铁，三单元发声</h2>
+					<h3>129元</h3>
+				</div>
+				<div class="star_item star_item3">
+					<img src="img/T1KvdjBX_v1RXrhCrK.jpg" alt="">
+					<h1>小米净水器 厨下式</h1>
+					<h2>直出纯净水，隐藏式安装</h2>
+					<h3>1999元</h3>
+				</div>
+				<div class="star_item star_item4">
+					<img src="img/848def18-47d9-4ca0-8822-c2ac61b83779.png" alt="">
+					<h1>米家扫地机器人</h1>
+					<h2>智能路径规划，扫得干净扫得快</h2>
+					<h3>1699元</h3>
+				</div>
+				<div class="star_item star_item6">
+					<img src="img/de35852a-1be5-4ef5-846f-dcdd2efcfea6.png" alt="">
+					<h1>小米路由器</h1>
+					<h2>更快更强，不止四天线</h2>
+					<h3>149元</h3>
+				</div>
 
-			<div class="star_item star_item3">
-				<img src="img/T1KvdjBX_v1RXrhCrK.jpg" alt="">
-				<h1>小米净水器 厨下式</h1>
-				<h2>直出纯净水，隐藏式安装</h2>
-				<h3>1999元</h3>
-			</div>
-
-			<div class="star_item star_item4">
-				<img src="img/848def18-47d9-4ca0-8822-c2ac61b83779.png" alt="">
-				<h1>米家扫地机器人</h1>
-				<h2>智能路径规划，扫得干净扫得快</h2>
-				<h3>1699元</h3>
-			</div>
-
-			<div class="star_item star_item5">
-				<img src="img/de35852a-1be5-4ef5-846f-dcdd2efcfea6.png" alt="">
-				<h1>小米路由器</h1>
-				<h2>更快更强，不止四天线</h2>
-				<h3>149元</h3>
+				<div class="star_item star_item1">
+					<img class="img" src="img/6ef55907-bbed-49be-a2bb-be0821b5f7b8.png" alt="">
+					<h1>10000mAh小米手环2</h1>
+					<h2>OLED显示屏幕，升级计算算法</h2>
+					<h3>149元</h3>
+				</div>
+				<div class="star_item star_item2">
+					<img src="img/302f2608-655a-489c-a0c5-a3b9172defd1.png" alt="">
+					<h1>小米圈铁耳机Pro</h1>
+					<h2>独创双动圈+动铁，三单元发声</h2>
+					<h3>129元</h3>
+				</div>
+				<div class="star_item star_item3">
+					<img src="img/T1KvdjBX_v1RXrhCrK.jpg" alt="">
+					<h1>小米净水器 厨下式</h1>
+					<h2>直出纯净水，隐藏式安装</h2>
+					<h3>1999元</h3>
+				</div>
+				<div class="star_item star_item4">
+					<img src="img/848def18-47d9-4ca0-8822-c2ac61b83779.png" alt="">
+					<h1>米家扫地机器人</h1>
+					<h2>智能路径规划，扫得干净扫得快</h2>
+					<h3>1699元</h3>
+				</div>
+				<div class="star_item star_item5">
+					<img src="img/de35852a-1be5-4ef5-846f-dcdd2efcfea6.png" alt="">
+					<h1>小米路由器</h1>
+					<h2>更快更强，不止四天线</h2>
+					<h3>149元</h3>
+				</div>
 			</div>
 		</div>
 	</section>
@@ -340,10 +407,10 @@
 		<div class="two_top">
 			<div class="two_top_left">搭配</div>
 			<div class="two_top_right">
-				<span class="remen">热门</span>
-				<span>耳机音箱</span>
-				<span>电源</span>
-				<span>电池存储卡</span>
+				<span class="type active">热门</span>
+				<span class="type">耳机音箱</span>
+				<span class="type">电源</span>
+				<span class="type">电池存储卡</span>
 			</div>
 		</div>
 		<div class="two_bottom">
@@ -355,7 +422,7 @@
 					<img src="img/xmad_15094387477095_BAdZH.jpg" alt="">
 				</div>
 			</div>
-			<div class="two_bottom_right">
+			<div class="two_bottom_right active">
 				<div class="two_item">
 					<div class="item1">
 						<img src="img/p1.jpg" alt="" >
@@ -444,6 +511,276 @@
 					</div>
 				</div>
 			</div>
+
+			<div class="two_bottom_right">
+				<div class="two_item">
+					<div class="item1">
+						<img src="img/848def18-47d9-4ca0-8822-c2ac61b83779.png" alt="" >
+					</div>
+					<div class="wenzi">
+						<a href="">小米运动蓝牙耳机</a>
+						<p class="wenzi1">319元</p>
+						<p class="wenzi2">632人已评论</p>
+					</div>
+				</div>
+
+				<div class="two_item">
+					<div class="item1">
+						<img src="img/8949026b-fa9a-4370-989b-5d5e2f149106.jpg" alt="" >
+					</div>
+					<div class="wenzi">
+						<a href="">小米运动蓝牙耳机</a>
+						<p class="wenzi1">319元</p>
+						<p class="wenzi2">632人已评论</p>
+					</div>
+				</div>
+
+				<div class="two_item">
+					<div class="item1">
+						<img src="img/p1.jpg" alt="" >
+					</div>
+					<div class="wenzi">
+						<a href="">小米运动蓝牙耳机</a>
+						<p class="wenzi1">319元</p>
+						<p class="wenzi2">632人已评论</p>
+					</div>
+				</div>
+
+				<div class="two_item">
+					<div class="item1">
+						<img src="img/2b69b930-a2fd-4d09-a46a-8690cb79f764.jpg" alt="" >
+					</div>
+					<div class="wenzi">
+						<a href="">小米运动蓝牙耳机</a>
+						<p class="wenzi1">319元</p>
+						<p class="wenzi2">632人已评论</p>
+					</div>
+				</div>
+
+				<div class="two_item two_item1">
+					<div class="item1">
+						<img src="img/1.jpg" alt="" >
+					</div>
+					<div class="wenzi">
+						<a href="">小米运动蓝牙耳机</a>
+						<p class="wenzi1">319元</p>
+						<p class="wenzi2">632人已评论</p>
+					</div>
+				</div>
+
+				<div class="two_item two_item1">
+					<div class="item1">
+						<img src="img/2b69b930-a2fd-4d09-a46a-8690cb79f764.jpg" alt="" >
+					</div>
+					<div class="wenzi">
+						<a href="">小米运动蓝牙耳机</a>
+						<p class="wenzi1">319元</p>
+						<p class="wenzi2">632人已评论</p>
+					</div>
+				</div>
+
+				<div class="two_item two_item1">
+					<div class="item1">
+						<img src="img/3.jpg" alt="" >
+					</div>
+					<div class="wenzi">
+						<a href="">小米运动蓝牙耳机</a>
+						<p class="wenzi1">319元</p>
+						<p class="wenzi2">632人已评论</p>
+					</div>
+				</div>
+
+				<div class="two_item two_item1">
+					<div class="item1">
+						<img src="img/p1.jpg" alt="" >
+					</div>
+					<div class="wenzi">
+						<a href="">小米运动蓝牙耳机</a>
+						<p class="wenzi1">319元</p>
+						<p class="wenzi2">632人已评论</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="two_bottom_right ">
+				<div class="two_item">
+					<div class="item1">
+						<img src="img/p1.jpg" alt="" >
+					</div>
+					<div class="wenzi">
+						<a href="">小米运动蓝牙耳机</a>
+						<p class="wenzi1">319元</p>
+						<p class="wenzi2">632人已评论</p>
+					</div>
+				</div>
+
+				<div class="two_item">
+					<div class="item1">
+						<img src="img/302f2608-655a-489c-a0c5-a3b9172defd1.png" alt="" >
+					</div>
+					<div class="wenzi">
+						<a href="">小米运动蓝牙耳机</a>
+						<p class="wenzi1">319元</p>
+						<p class="wenzi2">632人已评论</p>
+					</div>
+				</div>
+
+				<div class="two_item">
+					<div class="item1">
+						<img src="img/T1SkV_BCd_1RXrhCrK!220x220.jpg" alt="" >
+					</div>
+					<div class="wenzi">
+						<a href="">小米运动蓝牙耳机</a>
+						<p class="wenzi1">319元</p>
+						<p class="wenzi2">632人已评论</p>
+					</div>
+				</div>
+
+				<div class="two_item">
+					<div class="item1">
+						<img src="img/pms_1504498936.11861982!220x220.jpg" alt="" >
+					</div>
+					<div class="wenzi">
+						<a href="">小米运动蓝牙耳机</a>
+						<p class="wenzi1">319元</p>
+						<p class="wenzi2">632人已评论</p>
+					</div>
+				</div>
+
+				<div class="two_item two_item1">
+					<div class="item1">
+						<img src="img/pms_1517214417.03015779!220x220.jpg" alt="" >
+					</div>
+					<div class="wenzi">
+						<a href="">小米运动蓝牙耳机</a>
+						<p class="wenzi1">319元</p>
+						<p class="wenzi2">632人已评论</p>
+					</div>
+				</div>
+
+				<div class="two_item two_item1">
+					<div class="item1">
+						<img src="img/2b69b930-a2fd-4d09-a46a-8690cb79f764.jpg" alt="" >
+					</div>
+					<div class="wenzi">
+						<a href="">小米运动蓝牙耳机</a>
+						<p class="wenzi1">319元</p>
+						<p class="wenzi2">632人已评论</p>
+					</div>
+				</div>
+
+				<div class="two_item two_item1">
+					<div class="item1">
+						<img src="img/xmad_14987297093922_POaTU.jpg" alt="" >
+					</div>
+					<div class="wenzi">
+						<a href="">小米运动蓝牙耳机</a>
+						<p class="wenzi1">319元</p>
+						<p class="wenzi2">632人已评论</p>
+					</div>
+				</div>
+
+				<div class="two_item two_item1">
+					<div class="item1">
+						<img src="img/5x-2.jpg" alt="" >
+					</div>
+					<div class="wenzi">
+						<a href="">小米运动蓝牙耳机</a>
+						<p class="wenzi1">319元</p>
+						<p class="wenzi2">632人已评论</p>
+					</div>
+				</div>
+			</div>
+			
+			<div class="two_bottom_right">
+				<div class="two_item">
+					<div class="item1">
+						<img src="img/848def18-47d9-4ca0-8822-c2ac61b83779.png" alt="" >
+					</div>
+					<div class="wenzi">
+						<a href="">小米运动蓝牙耳机</a>
+						<p class="wenzi1">319元</p>
+						<p class="wenzi2">632人已评论</p>
+					</div>
+				</div>
+
+				<div class="two_item">
+					<div class="item1">
+						<img src="img/8949026b-fa9a-4370-989b-5d5e2f149106.jpg" alt="" >
+					</div>
+					<div class="wenzi">
+						<a href="">小米运动蓝牙耳机</a>
+						<p class="wenzi1">319元</p>
+						<p class="wenzi2">632人已评论</p>
+					</div>
+				</div>
+
+				<div class="two_item">
+					<div class="item1">
+						<img src="img/p1.jpg" alt="" >
+					</div>
+					<div class="wenzi">
+						<a href="">小米运动蓝牙耳机</a>
+						<p class="wenzi1">319元</p>
+						<p class="wenzi2">632人已评论</p>
+					</div>
+				</div>
+
+				<div class="two_item">
+					<div class="item1">
+						<img src="img/2b69b930-a2fd-4d09-a46a-8690cb79f764.jpg" alt="" >
+					</div>
+					<div class="wenzi">
+						<a href="">小米运动蓝牙耳机</a>
+						<p class="wenzi1">319元</p>
+						<p class="wenzi2">632人已评论</p>
+					</div>
+				</div>
+
+				<div class="two_item two_item1">
+					<div class="item1">
+						<img src="img/1.jpg" alt="" >
+					</div>
+					<div class="wenzi">
+						<a href="">小米运动蓝牙耳机</a>
+						<p class="wenzi1">319元</p>
+						<p class="wenzi2">632人已评论</p>
+					</div>
+				</div>
+
+				<div class="two_item two_item1">
+					<div class="item1">
+						<img src="img/2b69b930-a2fd-4d09-a46a-8690cb79f764.jpg" alt="" >
+					</div>
+					<div class="wenzi">
+						<a href="">小米运动蓝牙耳机</a>
+						<p class="wenzi1">319元</p>
+						<p class="wenzi2">632人已评论</p>
+					</div>
+				</div>
+
+				<div class="two_item two_item1">
+					<div class="item1">
+						<img src="img/3.jpg" alt="" >
+					</div>
+					<div class="wenzi">
+						<a href="">小米运动蓝牙耳机</a>
+						<p class="wenzi1">319元</p>
+						<p class="wenzi2">632人已评论</p>
+					</div>
+				</div>
+
+				<div class="two_item two_item1">
+					<div class="item1">
+						<img src="img/p1.jpg" alt="" >
+					</div>
+					<div class="wenzi">
+						<a href="">小米运动蓝牙耳机</a>
+						<p class="wenzi1">319元</p>
+						<p class="wenzi2">632人已评论</p>
+					</div>
+				</div>
+			</div>
 		</div>
 	</div>
 <!-- 搭配结束 --> 
@@ -453,10 +790,10 @@
 		<div class="two_top">
 			<div class="two_top_left">配件</div>
 			<div class="two_top_right">
-				<span class="remen">热门</span>
-				<span>保护套</span>
-				<span>贴膜</span>
-				<span>其他配件</span>
+				<span class="type active">热门</span>
+				<span class="type">保护套</span>
+				<span class="type">贴膜</span>
+				<span class="type">其他配件</span>
 			</div>
 		</div>
 		<div class="two_bottom">
@@ -468,6 +805,186 @@
 					<img src="img/z2.jpg" alt="">
 				</div>
 			</div>
+			<div class="two_bottom_right active">
+				<div class="two_item">
+					<div class="item1">
+						<img src="img/p1.jpg" alt="" >
+					</div>
+					<div class="wenzi">
+						<a href="">小米运动蓝牙耳机</a>
+						<p class="wenzi1">319元</p>
+						<p class="wenzi2">632人已评论</p>
+					</div>
+				</div>
+
+				<div class="two_item">
+					<div class="item1">
+						<img src="img/xmad_14987297093922_POaTU.jpg" alt="" >
+					</div>
+					<div class="wenzi">
+						<a href="">小米运动蓝牙耳机</a>
+						<p class="wenzi1">319元</p>
+						<p class="wenzi2">632人已评论</p>
+					</div>
+				</div>
+
+				<div class="two_item">
+					<div class="item1">
+						<img src="img/2b69b930-a2fd-4d09-a46a-8690cb79f764.jpg" alt="" >
+					</div>
+					<div class="wenzi">
+						<a href="">小米运动蓝牙耳机</a>
+						<p class="wenzi1">319元</p>
+						<p class="wenzi2">632人已评论</p>
+					</div>
+				</div>
+
+				<div class="two_item">
+					<div class="item1">
+						<img src="img/pms_1504498936.11861982!220x220.jpg" alt="" >
+					</div>
+					<div class="wenzi">
+						<a href="">小米运动蓝牙耳机</a>
+						<p class="wenzi1">319元</p>
+						<p class="wenzi2">632人已评论</p>
+					</div>
+				</div>
+
+				<div class="two_item two_item1">
+					<div class="item1">
+						<img src="img/pms_1504498936.11861982!220x220.jpg" alt="" >
+					</div>
+					<div class="wenzi">
+						<a href="">小米运动蓝牙耳机</a>
+						<p class="wenzi1">319元</p>
+						<p class="wenzi2">632人已评论</p>
+					</div>
+				</div>
+
+				<div class="two_item two_item1">
+					<div class="item1">
+						<img src="img/p1.jpg" alt="" >
+					</div>
+					<div class="wenzi">
+						<a href="">小米运动蓝牙耳机</a>
+						<p class="wenzi1">319元</p>
+						<p class="wenzi2">632人已评论</p>
+					</div>
+				</div>
+
+				<div class="two_item two_item1">
+					<div class="item1">
+						<img src="img/2.png" alt="" >
+					</div>
+					<div class="wenzi">
+						<a href="">小米运动蓝牙耳机</a>
+						<p class="wenzi1">319元</p>
+						<p class="wenzi2">632人已评论</p>
+					</div>
+				</div>
+
+				<div class="two_item two_item1">
+					<div class="item1">
+						<img src="img/1.jpg" alt="" >
+					</div>
+					<div class="wenzi">
+						<a href="">小米运动蓝牙耳机</a>
+						<p class="wenzi1">319元</p>
+						<p class="wenzi2">632人已评论</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="two_bottom_right ">
+				<div class="two_item">
+					<div class="item1">
+						<img src="img/302f2608-655a-489c-a0c5-a3b9172defd1.png" alt="" >
+					</div>
+					<div class="wenzi">
+						<a href="">小米运动蓝牙耳机</a>
+						<p class="wenzi1">319元</p>
+						<p class="wenzi2">632人已评论</p>
+					</div>
+				</div>
+
+				<div class="two_item">
+					<div class="item1">
+						<img src="img/302f2608-655a-489c-a0c5-a3b9172defd1.png" alt="" >
+					</div>
+					<div class="wenzi">
+						<a href="">小米运动蓝牙耳机</a>
+						<p class="wenzi1">319元</p>
+						<p class="wenzi2">632人已评论</p>
+					</div>
+				</div>
+
+				<div class="two_item">
+					<div class="item1">
+						<img src="img/T1SkV_BCd_1RXrhCrK!220x220.jpg" alt="" >
+					</div>
+					<div class="wenzi">
+						<a href="">小米运动蓝牙耳机</a>
+						<p class="wenzi1">319元</p>
+						<p class="wenzi2">632人已评论</p>
+					</div>
+				</div>
+
+				<div class="two_item">
+					<div class="item1">
+						<img src="img/pms_1504498936.11861982!220x220.jpg" alt="" >
+					</div>
+					<div class="wenzi">
+						<a href="">小米运动蓝牙耳机</a>
+						<p class="wenzi1">319元</p>
+						<p class="wenzi2">632人已评论</p>
+					</div>
+				</div>
+
+				<div class="two_item two_item1">
+					<div class="item1">
+						<img src="img/pms_1517214417.03015779!220x220.jpg" alt="" >
+					</div>
+					<div class="wenzi">
+						<a href="">小米运动蓝牙耳机</a>
+						<p class="wenzi1">319元</p>
+						<p class="wenzi2">632人已评论</p>
+					</div>
+				</div>
+
+				<div class="two_item two_item1">
+					<div class="item1">
+						<img src="img/2b69b930-a2fd-4d09-a46a-8690cb79f764.jpg" alt="" >
+					</div>
+					<div class="wenzi">
+						<a href="">小米运动蓝牙耳机</a>
+						<p class="wenzi1">319元</p>
+						<p class="wenzi2">632人已评论</p>
+					</div>
+				</div>
+
+				<div class="two_item two_item1">
+					<div class="item1">
+						<img src="img/xmad_14987297093922_POaTU.jpg" alt="" >
+					</div>
+					<div class="wenzi">
+						<a href="">小米运动蓝牙耳机</a>
+						<p class="wenzi1">319元</p>
+						<p class="wenzi2">632人已评论</p>
+					</div>
+				</div>
+
+				<div class="two_item two_item1">
+					<div class="item1">
+						<img src="img/5x-2.jpg" alt="" >
+					</div>
+					<div class="wenzi">
+						<a href="">小米运动蓝牙耳机</a>
+						<p class="wenzi1">319元</p>
+						<p class="wenzi2">632人已评论</p>
+					</div>
+				</div>
+			</div>
+
 			<div class="two_bottom_right">
 				<div class="two_item">
 					<div class="item1">
@@ -557,6 +1074,96 @@
 					</div>
 				</div>
 			</div>
+
+			<div class="two_bottom_right">
+				<div class="two_item">
+					<div class="item1">
+						<img src="img/848def18-47d9-4ca0-8822-c2ac61b83779.png" alt="" >
+					</div>
+					<div class="wenzi">
+						<a href="">小米运动蓝牙耳机</a>
+						<p class="wenzi1">319元</p>
+						<p class="wenzi2">632人已评论</p>
+					</div>
+				</div>
+
+				<div class="two_item">
+					<div class="item1">
+						<img src="img/8949026b-fa9a-4370-989b-5d5e2f149106.jpg" alt="" >
+					</div>
+					<div class="wenzi">
+						<a href="">小米运动蓝牙耳机</a>
+						<p class="wenzi1">319元</p>
+						<p class="wenzi2">632人已评论</p>
+					</div>
+				</div>
+
+				<div class="two_item">
+					<div class="item1">
+						<img src="img/p1.jpg" alt="" >
+					</div>
+					<div class="wenzi">
+						<a href="">小米运动蓝牙耳机</a>
+						<p class="wenzi1">319元</p>
+						<p class="wenzi2">632人已评论</p>
+					</div>
+				</div>
+
+				<div class="two_item">
+					<div class="item1">
+						<img src="img/2b69b930-a2fd-4d09-a46a-8690cb79f764.jpg" alt="" >
+					</div>
+					<div class="wenzi">
+						<a href="">小米运动蓝牙耳机</a>
+						<p class="wenzi1">319元</p>
+						<p class="wenzi2">632人已评论</p>
+					</div>
+				</div>
+
+				<div class="two_item two_item1">
+					<div class="item1">
+						<img src="img/1.jpg" alt="" >
+					</div>
+					<div class="wenzi">
+						<a href="">小米运动蓝牙耳机</a>
+						<p class="wenzi1">319元</p>
+						<p class="wenzi2">632人已评论</p>
+					</div>
+				</div>
+
+				<div class="two_item two_item1">
+					<div class="item1">
+						<img src="img/2b69b930-a2fd-4d09-a46a-8690cb79f764.jpg" alt="" >
+					</div>
+					<div class="wenzi">
+						<a href="">小米运动蓝牙耳机</a>
+						<p class="wenzi1">319元</p>
+						<p class="wenzi2">632人已评论</p>
+					</div>
+				</div>
+
+				<div class="two_item two_item1">
+					<div class="item1">
+						<img src="img/3.jpg" alt="" >
+					</div>
+					<div class="wenzi">
+						<a href="">小米运动蓝牙耳机</a>
+						<p class="wenzi1">319元</p>
+						<p class="wenzi2">632人已评论</p>
+					</div>
+				</div>
+
+				<div class="two_item two_item1">
+					<div class="item1">
+						<img src="img/p1.jpg" alt="" >
+					</div>
+					<div class="wenzi">
+						<a href="">小米运动蓝牙耳机</a>
+						<p class="wenzi1">319元</p>
+						<p class="wenzi2">632人已评论</p>
+					</div>
+				</div>
+			</div>
 		</div>
 	</div>
 <!-- 配件结束 --> 
@@ -567,11 +1174,11 @@
 		<div class="two_top">
 			<div class="two_top_left">周边</div>
 			<div class="two_top_right">
-				<span class="remen">热门</span>
-				<span>服装</span>
-				<span>米兔</span>
-				<span>生活周边</span>
-				<span>箱包</span>
+				<span class="type active">热门</span>
+				<span class="type">服装</span>
+				<span class="type">米兔</span>
+				<span class="type">生活周边</span>
+				<span class="type">箱包</span>
 			</div>
 		</div>
 		<div class="two_bottom">
@@ -583,6 +1190,366 @@
 					<img src="img/xmad_15094387477095_BAdZH.jpg" alt="">
 				</div>
 			</div>
+			<div class="two_bottom_right active">
+				<div class="two_item">
+					<div class="item1">
+						<img src="img/848def18-47d9-4ca0-8822-c2ac61b83779.png" alt="" >
+					</div>
+					<div class="wenzi">
+						<a href="">小米运动蓝牙耳机</a>
+						<p class="wenzi1">319元</p>
+						<p class="wenzi2">632人已评论</p>
+					</div>
+				</div>
+
+				<div class="two_item">
+					<div class="item1">
+						<img src="img/8949026b-fa9a-4370-989b-5d5e2f149106.jpg" alt="" >
+					</div>
+					<div class="wenzi">
+						<a href="">小米运动蓝牙耳机</a>
+						<p class="wenzi1">319元</p>
+						<p class="wenzi2">632人已评论</p>
+					</div>
+				</div>
+
+				<div class="two_item">
+					<div class="item1">
+						<img src="img/p1.jpg" alt="" >
+					</div>
+					<div class="wenzi">
+						<a href="">小米运动蓝牙耳机</a>
+						<p class="wenzi1">319元</p>
+						<p class="wenzi2">632人已评论</p>
+					</div>
+				</div>
+
+				<div class="two_item">
+					<div class="item1">
+						<img src="img/2b69b930-a2fd-4d09-a46a-8690cb79f764.jpg" alt="" >
+					</div>
+					<div class="wenzi">
+						<a href="">小米运动蓝牙耳机</a>
+						<p class="wenzi1">319元</p>
+						<p class="wenzi2">632人已评论</p>
+					</div>
+				</div>
+
+				<div class="two_item two_item1">
+					<div class="item1">
+						<img src="img/1.jpg" alt="" >
+					</div>
+					<div class="wenzi">
+						<a href="">小米运动蓝牙耳机</a>
+						<p class="wenzi1">319元</p>
+						<p class="wenzi2">632人已评论</p>
+					</div>
+				</div>
+
+				<div class="two_item two_item1">
+					<div class="item1">
+						<img src="img/2b69b930-a2fd-4d09-a46a-8690cb79f764.jpg" alt="" >
+					</div>
+					<div class="wenzi">
+						<a href="">小米运动蓝牙耳机</a>
+						<p class="wenzi1">319元</p>
+						<p class="wenzi2">632人已评论</p>
+					</div>
+				</div>
+
+				<div class="two_item two_item1">
+					<div class="item1">
+						<img src="img/3.jpg" alt="" >
+					</div>
+					<div class="wenzi">
+						<a href="">小米运动蓝牙耳机</a>
+						<p class="wenzi1">319元</p>
+						<p class="wenzi2">632人已评论</p>
+					</div>
+				</div>
+
+				<div class="two_item two_item1">
+					<div class="item1">
+						<img src="img/p1.jpg" alt="" >
+					</div>
+					<div class="wenzi">
+						<a href="">小米运动蓝牙耳机</a>
+						<p class="wenzi1">319元</p>
+						<p class="wenzi2">632人已评论</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="two_bottom_right">
+				<div class="two_item">
+					<div class="item1">
+						<img src="img/302f2608-655a-489c-a0c5-a3b9172defd1.png" alt="" >
+					</div>
+					<div class="wenzi">
+						<a href="">小米运动蓝牙耳机</a>
+						<p class="wenzi1">319元</p>
+						<p class="wenzi2">632人已评论</p>
+					</div>
+				</div>
+
+				<div class="two_item">
+					<div class="item1">
+						<img src="img/302f2608-655a-489c-a0c5-a3b9172defd1.png" alt="" >
+					</div>
+					<div class="wenzi">
+						<a href="">小米运动蓝牙耳机</a>
+						<p class="wenzi1">319元</p>
+						<p class="wenzi2">632人已评论</p>
+					</div>
+				</div>
+
+				<div class="two_item">
+					<div class="item1">
+						<img src="img/T1SkV_BCd_1RXrhCrK!220x220.jpg" alt="" >
+					</div>
+					<div class="wenzi">
+						<a href="">小米运动蓝牙耳机</a>
+						<p class="wenzi1">319元</p>
+						<p class="wenzi2">632人已评论</p>
+					</div>
+				</div>
+
+				<div class="two_item">
+					<div class="item1">
+						<img src="img/pms_1504498936.11861982!220x220.jpg" alt="" >
+					</div>
+					<div class="wenzi">
+						<a href="">小米运动蓝牙耳机</a>
+						<p class="wenzi1">319元</p>
+						<p class="wenzi2">632人已评论</p>
+					</div>
+				</div>
+
+				<div class="two_item two_item1">
+					<div class="item1">
+						<img src="img/pms_1517214417.03015779!220x220.jpg" alt="" >
+					</div>
+					<div class="wenzi">
+						<a href="">小米运动蓝牙耳机</a>
+						<p class="wenzi1">319元</p>
+						<p class="wenzi2">632人已评论</p>
+					</div>
+				</div>
+
+				<div class="two_item two_item1">
+					<div class="item1">
+						<img src="img/2b69b930-a2fd-4d09-a46a-8690cb79f764.jpg" alt="" >
+					</div>
+					<div class="wenzi">
+						<a href="">小米运动蓝牙耳机</a>
+						<p class="wenzi1">319元</p>
+						<p class="wenzi2">632人已评论</p>
+					</div>
+				</div>
+
+				<div class="two_item two_item1">
+					<div class="item1">
+						<img src="img/xmad_14987297093922_POaTU.jpg" alt="" >
+					</div>
+					<div class="wenzi">
+						<a href="">小米运动蓝牙耳机</a>
+						<p class="wenzi1">319元</p>
+						<p class="wenzi2">632人已评论</p>
+					</div>
+				</div>
+
+				<div class="two_item two_item1">
+					<div class="item1">
+						<img src="img/5x-2.jpg" alt="" >
+					</div>
+					<div class="wenzi">
+						<a href="">小米运动蓝牙耳机</a>
+						<p class="wenzi1">319元</p>
+						<p class="wenzi2">632人已评论</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="two_bottom_right">
+				<div class="two_item">
+					<div class="item1">
+						<img src="img/848def18-47d9-4ca0-8822-c2ac61b83779.png" alt="" >
+					</div>
+					<div class="wenzi">
+						<a href="">小米运动蓝牙耳机</a>
+						<p class="wenzi1">319元</p>
+						<p class="wenzi2">632人已评论</p>
+					</div>
+				</div>
+
+				<div class="two_item">
+					<div class="item1">
+						<img src="img/8949026b-fa9a-4370-989b-5d5e2f149106.jpg" alt="" >
+					</div>
+					<div class="wenzi">
+						<a href="">小米运动蓝牙耳机</a>
+						<p class="wenzi1">319元</p>
+						<p class="wenzi2">632人已评论</p>
+					</div>
+				</div>
+
+				<div class="two_item">
+					<div class="item1">
+						<img src="img/p1.jpg" alt="" >
+					</div>
+					<div class="wenzi">
+						<a href="">小米运动蓝牙耳机</a>
+						<p class="wenzi1">319元</p>
+						<p class="wenzi2">632人已评论</p>
+					</div>
+				</div>
+
+				<div class="two_item">
+					<div class="item1">
+						<img src="img/2b69b930-a2fd-4d09-a46a-8690cb79f764.jpg" alt="" >
+					</div>
+					<div class="wenzi">
+						<a href="">小米运动蓝牙耳机</a>
+						<p class="wenzi1">319元</p>
+						<p class="wenzi2">632人已评论</p>
+					</div>
+				</div>
+
+				<div class="two_item two_item1">
+					<div class="item1">
+						<img src="img/1.jpg" alt="" >
+					</div>
+					<div class="wenzi">
+						<a href="">小米运动蓝牙耳机</a>
+						<p class="wenzi1">319元</p>
+						<p class="wenzi2">632人已评论</p>
+					</div>
+				</div>
+
+				<div class="two_item two_item1">
+					<div class="item1">
+						<img src="img/2b69b930-a2fd-4d09-a46a-8690cb79f764.jpg" alt="" >
+					</div>
+					<div class="wenzi">
+						<a href="">小米运动蓝牙耳机</a>
+						<p class="wenzi1">319元</p>
+						<p class="wenzi2">632人已评论</p>
+					</div>
+				</div>
+
+				<div class="two_item two_item1">
+					<div class="item1">
+						<img src="img/3.jpg" alt="" >
+					</div>
+					<div class="wenzi">
+						<a href="">小米运动蓝牙耳机</a>
+						<p class="wenzi1">319元</p>
+						<p class="wenzi2">632人已评论</p>
+					</div>
+				</div>
+
+				<div class="two_item two_item1">
+					<div class="item1">
+						<img src="img/p1.jpg" alt="" >
+					</div>
+					<div class="wenzi">
+						<a href="">小米运动蓝牙耳机</a>
+						<p class="wenzi1">319元</p>
+						<p class="wenzi2">632人已评论</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="two_bottom_right ">
+				<div class="two_item">
+					<div class="item1">
+						<img src="img/302f2608-655a-489c-a0c5-a3b9172defd1.png" alt="" >
+					</div>
+					<div class="wenzi">
+						<a href="">小米运动蓝牙耳机</a>
+						<p class="wenzi1">319元</p>
+						<p class="wenzi2">632人已评论</p>
+					</div>
+				</div>
+
+				<div class="two_item">
+					<div class="item1">
+						<img src="img/302f2608-655a-489c-a0c5-a3b9172defd1.png" alt="" >
+					</div>
+					<div class="wenzi">
+						<a href="">小米运动蓝牙耳机</a>
+						<p class="wenzi1">319元</p>
+						<p class="wenzi2">632人已评论</p>
+					</div>
+				</div>
+
+				<div class="two_item">
+					<div class="item1">
+						<img src="img/T1SkV_BCd_1RXrhCrK!220x220.jpg" alt="" >
+					</div>
+					<div class="wenzi">
+						<a href="">小米运动蓝牙耳机</a>
+						<p class="wenzi1">319元</p>
+						<p class="wenzi2">632人已评论</p>
+					</div>
+				</div>
+
+				<div class="two_item">
+					<div class="item1">
+						<img src="img/pms_1504498936.11861982!220x220.jpg" alt="" >
+					</div>
+					<div class="wenzi">
+						<a href="">小米运动蓝牙耳机</a>
+						<p class="wenzi1">319元</p>
+						<p class="wenzi2">632人已评论</p>
+					</div>
+				</div>
+
+				<div class="two_item two_item1">
+					<div class="item1">
+						<img src="img/pms_1517214417.03015779!220x220.jpg" alt="" >
+					</div>
+					<div class="wenzi">
+						<a href="">小米运动蓝牙耳机</a>
+						<p class="wenzi1">319元</p>
+						<p class="wenzi2">632人已评论</p>
+					</div>
+				</div>
+
+				<div class="two_item two_item1">
+					<div class="item1">
+						<img src="img/2b69b930-a2fd-4d09-a46a-8690cb79f764.jpg" alt="" >
+					</div>
+					<div class="wenzi">
+						<a href="">小米运动蓝牙耳机</a>
+						<p class="wenzi1">319元</p>
+						<p class="wenzi2">632人已评论</p>
+					</div>
+				</div>
+
+				<div class="two_item two_item1">
+					<div class="item1">
+						<img src="img/xmad_14987297093922_POaTU.jpg" alt="" >
+					</div>
+					<div class="wenzi">
+						<a href="">小米运动蓝牙耳机</a>
+						<p class="wenzi1">319元</p>
+						<p class="wenzi2">632人已评论</p>
+					</div>
+				</div>
+
+				<div class="two_item two_item1">
+					<div class="item1">
+						<img src="img/5x-2.jpg" alt="" >
+					</div>
+					<div class="wenzi">
+						<a href="">小米运动蓝牙耳机</a>
+						<p class="wenzi1">319元</p>
+						<p class="wenzi2">632人已评论</p>
+					</div>
+				</div>
+			</div>
+
 			<div class="two_bottom_right">
 				<div class="two_item">
 					<div class="item1">
@@ -677,53 +1644,112 @@
 <!-- 周边结束 --> 
 
 <!-- 为你推荐开始 -->
-<div class="tuijian">
-	<div class="tuijian_top">
+<div class="star">
+	<div class="star_top">
 		<div class="tuijian_top_left">为你推荐</div>
-		<div class="tuijian_top_right">
-		<div class="star_btn3">&lt;</div>
-		<div class="star_btn4">&gt;</div>
+		<div class="star_btn">
+			<div class="star_btn1 disable">&lt;</div>
+			<div class="star_btn2 ">&gt;</div>
 		</div>
 	</div>
-	<div class="tuijian_bottom">
-		<div class="tuijian_bottom_item">
-			<img src="img/5.png" alt="">
-			<a href="">小米笔记本13.3英寸</a>
-			<div class="wenzi1">4899元</div>
-			<div class="wenzi2">8914人好评</div>
-		</div>
+	<div class="star_bottom">
+		<div class="bottom_inner">
+			<div class="tuijian_bottom_item">
+				<img src="img/5.png" alt="">
+				<a href="">小米笔记本13.3英寸</a>
+				<div class="wenzi1">4899元</div>
+				<div class="wenzi2">8914人好评</div>
+			</div>
+			<div class="tuijian_bottom_item tuijian_bottom_item1">
+				<img src="img/w1.jpg" alt="">
+				<a href="">小米笔记本13.3英寸</a>
+				<div class="wenzi1">4899元</div>
+				<div class="wenzi2">8914人好评</div>
+			</div>
+			<div class="tuijian_bottom_item tuijian_bottom_item1">
+				<img src="img/4.jpg" alt="">
+				<a href="">小米笔记本13.3英寸</a>
+				<div class="wenzi1">4899元</div>
+				<div class="wenzi2">8914人好评</div>
+			</div>
+			<div class="tuijian_bottom_item tuijian_bottom_item1">
+				<img src="img/3.jpg" alt="">
+				<a href="">小米笔记本13.3英寸</a>
+				<div class="wenzi1">4899元</div>
+				<div class="wenzi2">8914人好评</div>
+			</div>
+			<div class="tuijian_bottom_item tuijian_bottom_item1">
+				<img src="img/1.jpg" alt="">
+				<a href="">小米笔记本13.3英寸</a>
+				<div class="wenzi1">4899元</div>
+				<div class="wenzi2">8914人好评</div>
+			</div>
 
-		<div class="tuijian_bottom_item tuijian_bottom_item1">
-			<img src="img/w1.jpg" alt="">
-			<a href="">小米笔记本13.3英寸</a>
-			<div class="wenzi1">4899元</div>
-			<div class="wenzi2">8914人好评</div>
-		</div>
+			<div class="tuijian_bottom_item tuijian_bottom_item1">
+				<img src="img/5.png" alt="">
+				<a href="">小米笔记本13.3英寸</a>
+				<div class="wenzi1">4899元</div>
+				<div class="wenzi2">8914人好评</div>
+			</div>
+			<div class="tuijian_bottom_item tuijian_bottom_item1">
+				<img src="img/w1.jpg" alt="">
+				<a href="">小米笔记本13.3英寸</a>
+				<div class="wenzi1">4899元</div>
+				<div class="wenzi2">8914人好评</div>
+			</div>
+			<div class="tuijian_bottom_item tuijian_bottom_item1">
+				<img src="img/4.jpg" alt="">
+				<a href="">小米笔记本13.3英寸</a>
+				<div class="wenzi1">4899元</div>
+				<div class="wenzi2">8914人好评</div>
+			</div>
+			<div class="tuijian_bottom_item tuijian_bottom_item1">
+				<img src="img/3.jpg" alt="">
+				<a href="">小米笔记本13.3英寸</a>
+				<div class="wenzi1">4899元</div>
+				<div class="wenzi2">8914人好评</div>
+			</div>
+			<div class="tuijian_bottom_item tuijian_bottom_item1">
+				<img src="img/1.jpg" alt="">
+				<a href="">小米笔记本13.3英寸</a>
+				<div class="wenzi1">4899元</div>
+				<div class="wenzi2">8914人好评</div>
+			</div>
 
-		<div class="tuijian_bottom_item tuijian_bottom_item1">
-			<img src="img/4.jpg" alt="">
-			<a href="">小米笔记本13.3英寸</a>
-			<div class="wenzi1">4899元</div>
-			<div class="wenzi2">8914人好评</div>
+			<div class="tuijian_bottom_item tuijian_bottom_item1">
+				<img src="img/5.png" alt="">
+				<a href="">小米笔记本13.3英寸</a>
+				<div class="wenzi1">4899元</div>
+				<div class="wenzi2">8914人好评</div>
+			</div>
+			<div class="tuijian_bottom_item tuijian_bottom_item1">
+				<img src="img/w1.jpg" alt="">
+				<a href="">小米笔记本13.3英寸</a>
+				<div class="wenzi1">4899元</div>
+				<div class="wenzi2">8914人好评</div>
+			</div>
+			<div class="tuijian_bottom_item tuijian_bottom_item1">
+				<img src="img/4.jpg" alt="">
+				<a href="">小米笔记本13.3英寸</a>
+				<div class="wenzi1">4899元</div>
+				<div class="wenzi2">8914人好评</div>
+			</div>
+			<div class="tuijian_bottom_item tuijian_bottom_item1">
+				<img src="img/3.jpg" alt="">
+				<a href="">小米笔记本13.3英寸</a>
+				<div class="wenzi1">4899元</div>
+				<div class="wenzi2">8914人好评</div>
+			</div>
+			<div class="tuijian_bottom_item tuijian_bottom_item1">
+				<img src="img/1.jpg" alt="">
+				<a href="">小米笔记本13.3英寸</a>
+				<div class="wenzi1">4899元</div>
+				<div class="wenzi2">8914人好评</div>
+			</div>
 		</div>
-
-		<div class="tuijian_bottom_item tuijian_bottom_item1">
-			<img src="img/3.jpg" alt="">
-			<a href="">小米笔记本13.3英寸</a>
-			<div class="wenzi1">4899元</div>
-			<div class="wenzi2">8914人好评</div>
-		</div>
-
-		<div class="tuijian_bottom_item tuijian_bottom_item1">
-			<img src="img/1.jpg" alt="">
-			<a href="">小米笔记本13.3英寸</a>
-			<div class="wenzi1">4899元</div>
-			<div class="wenzi2">8914人好评</div>
-		</div>
-
 	</div>
 </div>
-<!-- 为你推荐开始 -->
+<!-- 为你推荐结束 -->
 
 <!-- 热评产品开始 -->
 <div class="hot">
@@ -1026,11 +2052,7 @@
 <!-- 黑科技开始 -->
 <div class="black">探索黑科技，小米为发烧而生！</div>
 <!-- 黑科技结束 -->
-
-
 	<!-- 中间部分结束 -->
-
-
-
 </body>
+<script src="js/index.js"></script>
 </html>
