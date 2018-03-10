@@ -615,6 +615,7 @@
 	margin-top: 22px;	
 }
 .neirong_bottom_item1{
+	position:relative;
 	float: left;
 	width: 296px;
 	height: 415px;
@@ -622,6 +623,36 @@
 	border-top: 1px solid #ffac13;
 	text-align: center;
 	margin-right: 14px;
+	overflow:hidden;
+}
+.prev,.next{
+	width:24px;
+	height:44px;
+	background:#908e8e;
+	color:#fff;
+	font-weight:bold;
+	font-size:24px;
+	text-align:center;
+	line-height:44px;
+	position:absolute;
+	top:50%;
+	z-index:9px;
+	opacity:0;
+	cursor: pointer;
+	user-select:none;
+}
+.prev{
+	left: 0;
+}
+.next{
+	right: 0;
+}
+.neirong_bottom_item1:hover .prev,
+.neirong_bottom_item1:hover .next{
+	opacity:0.4;
+} 
+.prev:hover,.next:hover{
+	opacity:1!important;
 }
 .neirong_bottom_item1 h1{
 	width: 260px;
@@ -630,6 +661,13 @@
     font-weight: 400;
     color: #ffac13;
 	margin: 50px auto 7px;
+}
+.content_inner{
+	width:2000px;
+}
+.item{
+	width: 296px;
+	float:left;
 }
 .neirong_bottom_item1 h2{
 	width: 256px;
@@ -668,11 +706,11 @@
 	cursor: pointer;
 }
 .dian{
-	width: 80px;
+	width:107px;
 	height: 30px;
 	/* background-color: red; */
 	float: left;
-	margin: 1px 108px;
+	margin: 1px 100px;
 }
 .dian1{
 	float: left;
@@ -685,14 +723,9 @@
 	margin: 12px 10px;
 }
 .dian2{
-	float: left;
-	width: 6px;
-	height: 6px;
 	border: 1px solid red;
-	border-radius:50%;
-	/* 画圆结束 */
-	color: #ffffff;
-	margin: 12px 10px;
+	background:#fff;
+	margin: 11px 9px;
 }
 .neirong_bottom_item2{
 	margin-right: 0;
@@ -1035,6 +1068,8 @@
 }
 .banner_jiantou{
 	float: right;
+	font-size:20px;
+	font-weight:bold;
 }
 /* 左右箭头 */
 .btn_left,.btn_right{
@@ -1138,9 +1173,7 @@ li:hover{
 	opacity: 1;
 }
 .list_right1:hover,.star_item:hover,.one_bottom_left img:hover,.one_item:hover{
-	box-shadow: 0 15px 30px rgba(0,0,0,0.1);/*x y 模糊度 阴影大小 颜色*/
-	transform:translate(0,-5px) ;
-	
+	box-shadow: 0 15px 30px rgba(0,0,0,0.1);/*x y 模糊度 阴影大小 颜色*/	
 }
 .two_bottom_left img:hover,.two_item:hover,
 .tuijian_bottom_item:hover,.hot_bottom_item1:hover,
@@ -1151,7 +1184,7 @@ li:hover{
 .list_right1,.star_item,.one_bottom_left img,.one_item,.two_bottom_left img,.two_item,
 .tuijian_bottom_item,.hot_bottom_item1,
 .neirong_bottom_item1,.view_bottom_item1{
-	transition: all 0.5s ease-out;
+	transition: box-shadow .2s linear;
 }
 /* .play:hover {
 	width: 36px;

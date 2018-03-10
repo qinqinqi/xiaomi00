@@ -66,38 +66,7 @@
 	})
 }
 
-// 闪购效果
-// {
-// 	const left=document.querySelector(".star_btn1");
-// 	const right=document.querySelector(".star_btn2");
-// 	const inner=document.querySelector(".bottom_inner");
-// 	let n=0;
-// 	right.onclick=function(){
-// 		n++;
-// 		left.classList.remove("disable");
-// 		if(n==2){
-// 			right.classList.add("disable");
-// 		}
-// 		if(n===3){
-// 			n=2;
-// 			return;
-// 		}
-// 		inner.style.marginLeft=-1240*n+"px";
-// 	}
-// 	left.onclick=function(){
-// 		n--;
-// 		right.classList.remove("disable");
-// 		if(n==0){
-// 			left.classList.add("disable");
-// 		}
-// 		if(n===-1){
-// 			n=0;
-// 			return;
-// 		}
-// 		inner.style.marginLeft=-1240*n+"px";
-// 	}
-// }
-
+//闪购效果
 {
 	function content(parent){
 		const left=parent.querySelector(".star_btn1");
@@ -135,7 +104,7 @@
 	});
 }
 
-//内容效果
+//搭配效果
 {
 	function content(parent){
 		const types=parent.querySelectorAll(".type");
@@ -155,4 +124,53 @@
 	contentList.forEach(function(ele){
 		content(ele);
 	});
+}
+
+//内容效果
+{
+	function content(parent){
+		let next=parent.querySelector(".next");
+		let prev=parent.querySelector(".prev");
+		let inner=parent.querySelector(".content_inner");
+		let item=parent.querySelectorAll(".item");
+		let parges=parent.querySelectorAll(".dian1");
+		let n=0;
+		next.onclick=function(){
+			n++;
+			if(n===item.length){
+				n=item.length-1;
+				return;
+			}
+			inner.style.marginLeft=n*-296+"px";
+			parges[n].classList.add("dian2");
+			parges[n-1].classList.remove("dian2");
+			obj=parges[n];
+		}
+		prev.onclick=function(){
+			n--;
+			if(n<0){
+				n=0;
+				return;
+			}
+			inner.style.marginLeft=n*-296+"px";
+			parges[n+1].classList.remove("dian2");
+			parges[n].classList.add("dian2");
+			obj=parges[n];
+		}
+		let obj=parges[0];
+		parges.forEach(function(ele,index){
+			ele.onclick=function(){
+				obj.classList.remove("dian2");
+				ele.classList.add("dian2");
+				obj=ele;
+				inner.style.marginLeft=index*-296+"px";
+				n=index;
+			}
+		});
+	}
+	const contentList=document.querySelectorAll(".neirong_bottom_item1");
+	contentList.forEach(function(ele){
+		content(ele);
+	});
+	// content(contentList[0]);
 }
