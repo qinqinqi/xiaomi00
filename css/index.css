@@ -65,7 +65,15 @@
 }
 .nav_wenzi{
 	float: left;
-	margin-left: 189px;
+	/* margin-left: 189px; */
+}
+.gif_img{
+	width: 189px;
+	height:100px;
+	float:left;
+	background:url("../img/gif_img.gif");
+	background-repeat: no-repeat;
+    background-position: center center;
 }
 /* 后代选择器 */
 .nav_wenzi span{
@@ -107,6 +115,77 @@
 	color: #fff;
 	background-color: #ff6700;
 	cursor: pointer;
+}
+.nav_xiala{
+	width: 100%;
+	height:0;
+    background-color:#fff;
+    position: absolute;
+    top: 140px;
+    z-index:50;
+    display:none;
+    border-top:1px solid #ccc;
+    transition: all 1s ease-in;
+    /* overflow: hidden; */
+    box-sizing:border-box;
+}
+.nav_xiala_content{
+	width: 1226px;
+    height: 229px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    padding-left: 58px;
+    /* background:blue; */
+}
+.xiala_item{
+	position: relative;
+    float: left;
+    width: 180px;
+    padding: 35px 12px 0;
+    text-align: center;
+    font-size:12px;
+    background:#fff;
+}
+.xiala_item img{
+	width: 160px;
+    height: 110px;
+    display:block;
+    margin: 0 auto 16px;
+    text-align: center;
+}
+.item_title{
+	color: #333;
+	line-height:20px;
+}
+.xiala_item p{
+	color: #ff6700;
+	font-weight:bold;
+	line-height:20px;
+}
+.item_line{
+	width: 1px;
+    height: 110px;
+    background:#ccc;
+    position:absolute;
+    top:35px;
+    right:0;
+}
+.flags{
+	position:absolute;
+    top:0;
+    left:64px;
+    display: inline-block;
+    height: 18px;
+    padding: 1px 20px;
+    border: 1px solid #ff6700;
+    color: #ff6700;
+}
+.nav_content1{
+	z-index:400;
 }
 .star{
 	width: 1226px;
@@ -241,6 +320,7 @@
 .one_top_left{
 	line-height: 58px;
 	float: left;
+	font-size: 22px;
 }
 .one_top_right{
 	float: right;
@@ -348,6 +428,7 @@
 	float: left;
 	cursor:pointer;
 	user-select:none;
+	font-size: 22px;
 }
 .two_top_right{
 	margin-top: 20px;
@@ -455,6 +536,7 @@
 .tuijian_top_left{
 	float: left;
 	margin-top: 20px;
+	font-size: 22px;
 }
 .tuijian_top_right{
 	float: right;
@@ -537,6 +619,7 @@
 	
 .hot_top1{
 	padding-top: 18px;
+    font-size: 22px;
 }
 .hot_bottom{
 	width: 1226px;
@@ -943,6 +1026,12 @@
 	color: #ff6700;
 	border: 1px solid #ff6700;
 }
+.icon:hover{
+	background:#ff6700;
+}
+.icon1:hover{
+	color:#fff; 
+}
 
 /* 举报开始 */
 .jubao{
@@ -1055,7 +1144,7 @@
 	left: 0;
 	top:0 ;
 	padding: 20px 0;
-	z-index:999;
+	z-index:30;
 }
 .banner_nav li{
 	width: 174px;
@@ -1065,6 +1154,58 @@
 	font-size: 14px;
 	color: #fff;
 	padding: 0 30px;
+}
+.banner_inner{
+	width:992px;
+	height:460px;
+	position:absolute;
+	left:234px;
+	top: 0;
+	z-index:20;
+	font-size:100px;
+	background:#fff;
+	color:#000;
+	display:none;
+}
+.scroll_item{
+	width:248px;
+	height:459px;
+	/* background:blue; */
+	border-top:1px solid #ccc;
+	float:left;
+}
+.scroll_item span{
+	color:#000;
+}
+.scroll_item ul{
+	padding:0;
+}
+.scroll_item ul li{
+	float: left;
+    width: 248px;
+    height: 76px;
+    font-size: 14px;
+    font-weight:normal;
+    line-height:76px;
+    padding: 0;
+} 
+.scroll_item ul li span{
+	height: 76px;
+	line-height:76px;
+	display:block;
+	float: left;
+}
+.scroll_item ul li img{
+	width:36px;
+	height:36px;
+	margin-right:12px;
+	padding-left:40px;
+	margin-top:20px;
+	float: left;
+}
+.scroll_item ul li:hover{
+	background:#fff;
+	color:orange;
 }
 .banner_jiantou{
 	float: right;
@@ -1078,7 +1219,7 @@
 	position:absolute;
 	top:50%;
 	margin-top:-35px;
-	z-index:999;
+	z-index:9;
 	background:url("../img/icon.png");
 	opacity:0.6;
 	cursor:pointer;
@@ -1197,3 +1338,4 @@ li:hover{
 	 background-color: #ff6700;
 	 color: #fff;
 }
+
