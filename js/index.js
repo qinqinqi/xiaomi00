@@ -195,15 +195,13 @@
 	})
 }
 
-//导航选项卡效果
+// 导航选项卡效果
 {
 
     const navspans=document.querySelectorAll(".nav_span");
     const navbox=document.querySelector(".nav_xiala");
     const navitem=document.querySelectorAll(".nav_xiala_content");
     const nav=document.querySelector(".daohang");
-    // console.log(nav);
-    // console.log(navitem);
     navspans.forEach(function(ele,index){
         ele.onmouseenter=function(){
             navbox.style.height="229px";
@@ -213,11 +211,27 @@
                 navitem[i].classList.remove("nav_content1");
             }
             navitem[index].classList.add("nav_content1");
-        }
-        ele.onmouseleave=function(){
-        	navbox.style.height="0";
-            navbox.style.display="none";
+        };
+            ele.onmouseleave = function () {
+                navbox.style.height = "0";
+                navbox.style.display = "none";
+            }
+    });
+    navitem.forEach(function(ele,index){
+        ele.onmouseenter=function(){
+            navbox.style.height="229px";
+            navbox.style.display="block";
+            for(var i=0;i<navitem.length;i++)
+            {
+                navitem[i].classList.remove("nav_content1");
+            }
+            navitem[index].classList.add("nav_content1");
+        };
+        ele.onmouseleave = function () {
+            navbox.style.height = "0";
+            navbox.style.display = "none";
         }
 
-    })
+	})
 }
+
