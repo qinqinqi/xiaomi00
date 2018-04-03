@@ -747,6 +747,7 @@
 }
 .content_inner{
 	width:2000px;
+	transition: all .5s;
 }
 .item{
 	width: 296px;
@@ -804,6 +805,7 @@
 	/* 画圆结束 */
 	color: #ffffff;
 	margin: 12px 10px;
+	transition: all .5s;
 }
 .dian2{
 	border: 1px solid red;
